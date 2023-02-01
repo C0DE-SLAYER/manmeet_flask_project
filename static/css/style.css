@@ -720,3 +720,49 @@ label {
   #to_close{
 	z-index: 999;
   }
+
+  /* backtotop button */
+  
+#myBtn {
+	/*   display none until javascript picks up scroll function */
+	  display: none;
+	  
+	/*   makes it stay to bottom */
+	  bottom: 0px;
+	  
+	  /*   makes it sticky! */
+	  position: fixed;
+	  
+	  font-size: 20px;
+	  
+	  border: none;
+	  
+	  outline: none;
+	  
+	  background-color: #f2b5b5;
+	  
+	/*   text color is white */
+	  color: white;
+	  
+	/*   cursor is changed to pointer so user knows that they can click */
+	  cursor: pointer;
+	  
+	  padding: 10px;
+	  
+	/*   full width of screen */
+	  width: 100%;
+	}
+	
+	/* on hover change to darker color */
+	#myBtn:hover {
+	  background-color: #ce9494;
+	}
+	
+	
+	/* responsive design - hide button on screens less than 767px */
+	@media only screen and (max-width: 767px) {
+	  #myBtn {
+		visibility: hidden;
+	  }
+	}
+	
