@@ -14,14 +14,14 @@
   </div>
   <script>
     const close_btn = document.getElementById('to_close')
-setTimeout(() => {
-    close_btn.classList.remove('flash_show');
-    close_btn.classList.add('flash_hide');
-},4000);
+    setTimeout(() => {
+      close_btn.classList.remove('flash_show');
+      close_btn.classList.add('flash_hide');
+    }, 4000);
   </script>
   {% endif %}
   {% endwith %}
-  
+
   <div class="row mt-7">
 
     <!-- first card -->
@@ -207,7 +207,8 @@ setTimeout(() => {
   <a href="#" class="delete" title="Delete" data-toggle="modal" data-target="#delete-photo{{i}}"><i
       class="material-icons">&#xE872;</i></a>
 
-  <form action="/delete" method="POST" class="modal fade" id="delete-photo{{i}}" tabindex="-1" role="dialog" aria-hidden="true">
+  <form action="/delete" method="POST" class="modal fade" id="delete-photo{{i}}" tabindex="-1" role="dialog"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
